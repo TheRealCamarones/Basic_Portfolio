@@ -1,3 +1,11 @@
+/* Box sizing */
+body {
+    box-sizing: border-box;
+    border: 5px;
+    padding: 20px;
+    width: 910px;
+}
+
 /*Set font for the headings*/
 .headerfont {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -7,8 +15,25 @@
 /*Set style for header section*/
 .header {
     background-color: #ffffff;
-    background: #4aaaa5;
     border-bottom: 2px solid #cccccc;
+    width: 100%;
+    padding: 0;
+}
+
+/* Set font and coloring for header section */
+#heading {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 250px;
+}
+
+/* Set independent styling for links */
+#link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    float: right;
+    padding: 10px;
+    position: relative;
 }
 
 /*Set font for main writing*/
@@ -16,6 +41,12 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     background-color: #ffffff;
+}
+
+/* Format the message form */
+#messageform {
+    margin: 10px;
+    width: 200px;
 }
 
 /*Set the sticky footer to the bottom of the page*/
