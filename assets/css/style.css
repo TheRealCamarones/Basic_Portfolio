@@ -1,7 +1,7 @@
 /* Box sizing */
 body {
     box-sizing: border-box;
-    border: 5px;
+    
     padding: 20px;
     width: 910px;
 }
@@ -18,6 +18,10 @@ body {
     border-bottom: 2px solid #cccccc;
     width: 100%;
     padding: 0;
+    display: block;
+    float: left;
+    overflow: auto;
+    position: relative;
 }
 
 /* Set font and coloring for header section */
@@ -27,12 +31,37 @@ body {
     width: 250px;
 }
 
-/* Set independent styling for links */
-#link {
+/* Set links individually for header*/
+#homelink {
+    list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
+    padding: 0px;
+    display: block;
     float: right;
-    padding: 10px;
+    border-right: 1px solid #bbb;
+    position: relative;
+}
+
+#portfoliolink {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    padding: 0px;
+    display: block;
+    float: right;
+    border-right: 1px solid #bbb;
+    position: relative;
+}
+
+#contactlink {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    padding: 0px;
+    display: block;
+    float: right;
+    border-right: 1px solid #bbb;
     position: relative;
 }
 
@@ -43,11 +72,37 @@ body {
     background-color: #ffffff;
 }
 
-/* Format the message form */
-#messageform {
-    margin: 10px;
-    width: 200px;
+/* Style the form submission THANK YOU W3 Schools*/
+#input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
 }
+
+/* Specific to the message portion of the form */
+#messageinput {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+}
+
+/* Customize the submit button https://www.jotform.com/help/118-How-to-Customize-the-Submit-Button-with-CSS */
+#submitform {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold 15px arial, sans-serif;
+    text-shadow:none;
+}
+
 
 /*Set the sticky footer to the bottom of the page*/
 .footer {
