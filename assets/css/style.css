@@ -1,10 +1,20 @@
 /* Box sizing */
+
+/* fun test command I found to visualize all the content boxes on the page */
+/* * {
+    border: 1px solid red !important;
+} */
+
+* {
+    box-sizing: border-box;
+}
 body {
     box-sizing: border-box;
     margin: auto;
     padding: 20px;
-    width: 910px;
+    width: 920px;
     border: 1px solid #bbb;
+    position: relative;
 }
 
 h1 {
@@ -12,70 +22,51 @@ h1 {
 }
 
 /*Set font for the headings*/
-.headerfont {
+h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
 }
 
 /*Set style for header section*/
-.header {
+header {
     background-color: #ffffff;
     list-style-type: none;
     width: 100%;
-    display: block;
-    float: left;
-    overflow: auto;
+    height: 75px;
+    /* overflow: auto; */
     position: relative;
 }
 
 /* Set font and coloring for header section */
-#heading {
+h1 {
     background: #4aaaa5;
     color: #ffffff;
+    padding: 5px;
     width: 250px;
+    position: relative;
+    bottom: -40px;
 }
 
-/* Set links individually for header*/
-#homelink {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    padding: 0px;
-    display: inline-block;
-    float: right;
-    border-right: 1px solid #bbb;
-    position: absolute;
-}
 
-#portfoliolink {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    padding: 0px;
-    display: inline-block;
-    float: right;
-    border-right: 1px solid #bbb;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#contactlink {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    padding: 0px;
-    display: inline-block;
-    float: right;
-    border-right: 1px solid #bbb;
-    position: absolute;
-}
-
-/*Set font for main writing*/
-.mainfont {
+/*Set font for main writing and nav bar*/
+p {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     background-color: #ffffff;
+}
+/* Remove bullets from list that makes up nav header */
+ul {
+    list-style-type: none
+}
+
+/* Display links in top right as nav header */
+a {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    float: right;
+    padding: 5px;
+    border-right: 1px solid #bbb;
 }
 
 /* Style the form submission THANK YOU W3 Schools*/
@@ -111,33 +102,18 @@ h1 {
 
 /* Place text box over portfolio pictures
 https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php*/
-.box {
-    position: relative;
-    display: inline-block;
-    background: #4aaaa5;
-}
 
-.box .text {
-    position: absolute;
-    z-index: 999;
-    margin:0 auto;
-    left: 0;
-    right: 0;
-    top: 40%;
-    text-align: center;
-    width: 60%;
-}
 
 /* portfolio picture float */
-
 .image {
     box-sizing: border-box;
     width: 50%;
     padding: 50px;
-    float: right;
+    margin: auto;
+    float: left;
 }
 /*Set the sticky footer to the bottom of the page*/
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
