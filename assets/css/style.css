@@ -1,13 +1,13 @@
-/* Box sizing */
+/* Box sizing
+* {
+    box-sizing: border-box;
+} */
 
 /* fun test command I found to visualize all the content boxes on the page */
 /* * {
     border: 1px solid red !important;
 } */
 
-* {
-    box-sizing: border-box;
-}
 body {
     box-sizing: border-box;
     margin: auto;
@@ -47,7 +47,6 @@ h1 {
     bottom: -40px;
 }
 
-
 /*Set font for main writing and nav bar*/
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +59,7 @@ ul {
 }
 
 /* Display links in top right as nav header */
-a {
+a.navlink {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
@@ -100,18 +99,40 @@ a {
     text-shadow:none;
 }
 
+/* Container for first two photos */
+.row1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -20px;
+}
+
+.row2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -20px
+}
+
+.row3 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -20px;
+}
+
 /* Place text box over portfolio pictures
 https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php*/
+/* .text1 {
+    position: absolute;
+} */
 
-
-/* portfolio picture float */
-.image {
-    box-sizing: border-box;
-    width: 50%;
-    padding: 50px;
-    margin: auto;
-    float: left;
-}
 /*Set the sticky footer to the bottom of the page*/
 footer {
     position: fixed;
