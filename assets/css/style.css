@@ -8,15 +8,23 @@
     border: 1px solid red !important;
 } */
 
+/* Set the background image...hopefully... */
+
+/* Size the main content area */
 body {
     box-sizing: border-box;
     margin: auto;
-    padding: 20px;
-    width: 920px;
-    border: 1px solid #bbb;
+    /* padding: 30px; */
+    width: 960px;
+    border: 1px solid #dddddd;
     position: relative;
+    background: radial-gradient(circle, black, white)
 }
 
+.contentbg {
+    background: #ffffff;
+}
+/* Line the header up */
 h1 {
     display: inline;
 }
@@ -34,9 +42,20 @@ header {
     width: 100%;
     height: 75px;
     /* overflow: auto; */
-    position: relative;
+    /* position: relative; */
 }
 
+.profilepic {
+    height: 300px;
+    width: 300px;
+}
+
+#mainbio {
+    float: right;
+    padding:5px;
+    width: 50%;
+    overflow: auto;
+}
 /* Set font and coloring for header section */
 h1 {
     background: #4aaaa5;
@@ -99,39 +118,27 @@ a.navlink {
     text-shadow:none;
 }
 
-/* Container for first two photos */
-.row1 {
+/* Container for portfolio photos */
+img.row1, img.row2, img.row3 {
     float: left;
     width: 50%;
     padding: 5px;
     box-sizing: border-box;
-    position: relative;
     bottom: -20px;
 }
-
-.row2 {
-    float: left;
-    width: 50%;
-    padding: 5px;
-    box-sizing: border-box;
+/* container positioning for links */
+.container {
     position: relative;
-    bottom: -20px
-}
-
-.row3 {
-    float: left;
-    width: 50%;
-    padding: 5px;
-    box-sizing: border-box;
-    position: relative;
-    bottom: -20px;
+    text-align: center;
+    color: #fff;
 }
 
 /* Place text box over portfolio pictures
 https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php*/
-/* .text1 {
+#topleft {
     position: absolute;
-} */
+    
+}
 
 /*Set the sticky footer to the bottom of the page*/
 footer {
