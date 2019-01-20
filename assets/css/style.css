@@ -37,10 +37,16 @@ header {
     border-bottom: 2px solid #ccc;
     margin-bottom: 25px;
 }
- #aboutme {
+ #aboutme{
      background: #ffffff;
-     padding: 2px;
+     padding: 25px;
      border: 2px solid #ccc;
+ }
+
+ #bio {
+    width: 60%;
+    float: right;
+    text-indent: 25px;
  }
 /* Set font and coloring for header section */
  header h1 {
