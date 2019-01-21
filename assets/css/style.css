@@ -22,8 +22,14 @@ p {
     line-height: 20px;
     margin-bottom: 20px;
 }
+form {
+    font-size: 16px;
+    background: #fff;
+    padding: 15px;
+}
 #bio {
     float:right;
+    padding: 2px;
 }
 h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,8 +45,12 @@ h2 {
     color: #4aaaa5;
     background: #fff;
     font-size: 28px;
+    padding: 10px;
 }
 
+input {
+    color: #fff;
+}
 /*Set style for header section*/
 header {
     background-color: #ffffff;
@@ -51,8 +61,9 @@ header {
      background: #ffffff;
      padding: 25px;
      border: 2px solid #ccc;
-     min-height: 600px;
+     margin-bottom: 20px;
  }
+
 
  #bio {
     width: 60%;
